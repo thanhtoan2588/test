@@ -1,0 +1,35 @@
+@media  screen and (max-width: 990px) {
+    /* được áp dụng cho tablet width 744px */
+    .header-container{
+        height: 70px;
+    }
+
+    .header-container .header-menu-search{
+        display: flex;
+    }
+
+    .header-container .header-menu-search svg{
+        font-size: 25px;
+        margin-right: 10px;
+    }
+
+    .header-container .header-nav-links{
+        display: none;
+    }
+
+    .header-container .header-logo{
+        width: 70px;
+    }
+
+    .header-container .header-actionUser .header-actionUser-search{
+        display: none;
+    }
+
+    .header-container .header-actionUser .header-actionUser-button svg {
+        margin-left: 15px;
+    }
+}
+
+@media  screen and (max-width: 390px) {
+    /* được áp dụng cho mobile */
+}
