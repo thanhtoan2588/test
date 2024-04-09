@@ -1,31 +1,37 @@
 .header-container{
-    background-color: #3C3C3C;
+    background-color: #212121;
     color: #fff;
     display: flex;
     height: 100px;
     align-items: center;
     padding: 0px 40px 0px;
     justify-content: space-between;
+    font-weight: 400;
 }
+
 .header-container .header-menu-search{
     display: none;
 }
+
 .header-container .header-logo{
     width: 100px;
     background-color: white;
 }
+
 .header-container .header-nav-links{
     display: flex;
     list-style: none;
     font-size: 16px;
+    justify-content: space-between;
+    width: 60vw;
+    padding-left: 10px;
+
 }
+
 .header-container .header-nav-links li{
-    padding: 0px 0px 0px 33px;
+    /* padding: 0px 0px 0px 26px; */
 }
-.header-container .header-actionUser{
-    display: flex;
-    align-items: center;
-}
+
 .header-container .header-actionUser .header-actionUser-search{
     display: flex;
     align-items: center;
@@ -34,21 +40,91 @@
     border-radius: 50px;
     height: 50px;
 }
+
 .header-container .header-actionUser .header-actionUser-search svg{
     color: #000;
     font-size: 25px;
     margin-right: 3px;
 }
+
 .header-container .header-actionUser .header-actionUser-search input{
     font-size: 14px;
     outline: none;
+    width: 100%;
     border: none;
     background-color: #e8e8e8;
 }
-.header-container .header-actionUser .header-actionUser-button {
-    font-size: 25px ;
+
+.header-actionUser {
+    display: flex;
+    width: 22%;
+    align-items: center; 
+    font-size: 24px;
+    justify-content: space-between;
 }
-.header-container .header-actionUser .header-actionUser-button svg {
-    margin-left: 23px;
+
+.header-container .header-actionUser .header-actionUser-userIcon {
     color: white;
+    font-size: 24px;
+    /* padding-left: 10px; */
+}
+
+.header-container .header-actionUser .header-actionUser-content{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-container .header-actionUser .header-actionUser-content .header-actionUser-content-user{
+    background: #f1f1f1;
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    top: 45px;
+    right: 4px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: flex-end; 
+}
+
+.header-container .header-actionUser .header-actionUser-bagIcon-noneRegister{
+    color: #fff;
+}
+
+.header-container .header-actionUser .header-actionUser-bagIcon {
+    font-size: 24px;
+    color: white;
+    display: flex;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+}
+
+.header-container .header-actionUser .header-actionUser-content .header-actionUser-content-user>button{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.header-container .header-actionUser .header-actionUser-content .header-actionUser-content-user>button>svg{
+    font-size: 20px;
+}
+
+.header-container .header-actionUser .header-actionUser-content .header-actionUser-content-user>button:hover{
+    background: #fff;
+    border-radius: 10px;
+}
+
+.header-container .header-actionUser .header-actionUser-bagIcon:hover {
+    background: #fff;
+    border-radius: 10px;
 }

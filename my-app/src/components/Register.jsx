@@ -19,8 +19,7 @@ const urlApi = "https://656708c964fcff8d730f9b4b.mockapi.io/api/login/users"
 
 const registerSchema = yup.object({
   name: yup.string().required().min(3),
-  email: yup.string().email().required(),
-  password: yup.string().required().min(3),
+  password: yup.string().required().min(3)
 });
 
 function Register() {
@@ -48,10 +47,7 @@ function Register() {
       (data) => {setDataRegister(data.data);
 
       localStorage.setItem("dataRegister", JSON.stringify(data.data))
-      // localStorage.setItem("dataRegister", JSON.stringify(dataRegister))
-      // theo em nghỉ khi mình lưu data.data vào localStorage thì nó có đảm bảo dữ liệu mới nhất 
-      // khi cập nhật và không bị mất còn khi em test lưu vào dataRegister thì dữ liệu trong localStogare
-      // không được đẩm bảo và bị rỗng
+      
       }
     )
     postUser.catch(

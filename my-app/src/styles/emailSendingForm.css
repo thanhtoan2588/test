@@ -1,0 +1,85 @@
+.container-email{
+    background: #f1f1f1;
+    width: 80%;
+    height: 90vh;
+    margin: 30px auto;
+    display: flex;
+    padding: 60px 100px 60px;
+    justify-content: space-between;
+}
+
+.container-email .container-email-options{
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+.container-email .container-email-options h3{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.container-email .container-email-options>a{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+    width: 250px;
+    font-size: 18px;
+    background: #fff;
+    height: 40px;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container-email .container-email-form{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.container-email .container-email-form .container-email-form-main{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-email .container-email-form .container-email-form-main input{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.container-email .container-email-form .container-email-form-main label{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.container-email .container-email-form .container-email-form-main input:nth-child(6){
+    height: 100px;
+}
+
+.container-email .container-email-form .container-email-form-button{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container-email .container-email-form .container-email-form-button button{
+    width: 400px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}

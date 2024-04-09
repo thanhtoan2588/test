@@ -1,3 +1,39 @@
+@media  screen and (max-width: 1290px) {
+    
+    /* header */
+    .header-container .header-nav-links{
+        font-size: 14px;
+    }
+
+    .header-container .header-logo {
+        width: 80px;
+    }
+
+    .header-container .header-actionUser .header-actionUser-search{
+        width: 70%;
+    }
+
+
+}
+
+@media  screen and (max-width: 1100px) {
+
+    /* header */
+    .header-container .header-nav-links{
+        font-size: 12px;
+    }
+
+    .header-container .header-actionUser .header-actionUser-search {
+        height: 40px;
+    }
+
+    .header-container {
+        height: 80px;
+    }
+
+}
+
+
 @media  screen and (max-width: 990px) {
     /* được áp dụng cho tablet width 744px */
     .header-container{
@@ -25,8 +61,9 @@
         display: none;
     }
 
-    .header-container .header-actionUser .header-actionUser-button svg {
-        margin-left: 15px;
+    .header-actionUser {
+        width: 7%;
+        justify-content: space-between;
     }
 }
 
